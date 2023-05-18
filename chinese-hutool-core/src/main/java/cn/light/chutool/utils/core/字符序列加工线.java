@@ -16,6 +16,7 @@ public interface 字符序列加工线 {
     字符序列加工线 执行();
     字符序列加工线 重复动作(int 重复之前多少个步骤, int 重复次数);
     字符序列加工线 添加前缀当前缀不存在(CharSequence 前缀);
+    字符序列加工线 添加后缀当后缀不存在(CharSequence 后缀);
     CharSequence 执行然后拿出字符序列();
     CharSequence 拿出字符序列();
     字符序列加工线 快照();
