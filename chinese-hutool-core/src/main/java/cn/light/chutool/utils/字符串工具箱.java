@@ -15,6 +15,8 @@ public class 字符串工具箱 {
     public final static String 填充字符_空 = "";
     public final static String 填充字符_NULL = "null";
 
+
+
     public static String 填充字符串到右边(String 源字符串, char 填充字符, int 长度) {
         return StrUtil.fillBefore(源字符串, 填充字符, 长度);
     }

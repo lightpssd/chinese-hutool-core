@@ -7,9 +7,16 @@ package cn.light.chutool.utils;
  * Project chinese-hutool
  **/
 public class Main {
+
+
     public static void main(String[] args) {
-        字符串流式加工线.放入字符串("1234")
-                .填充字符到两边('0', 5)
-                .执行();
+        Object a = 字符序列流式加工线.放入字符序列("1234")
+                .执行加工当条件满足时(r -> true, r->r+"A")
+                .执行加工当条件满足时(r -> true, r->r+"B")
+                .重复动作(4,20)
+                .执行().拿到加工历史();
+
+        System.out.println(a);
+
     }
 }
